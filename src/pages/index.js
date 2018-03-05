@@ -1,13 +1,34 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { Container } from '../components/Common';
+import Link from 'gatsby-link';
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+const Hero = styled.div`
+  background: #232528;
+  padding: 5rem 0;
+  text-align: center;
+`;
 
-export default IndexPage
+const HeroTitle = styled.h1`
+  font-size: 5.5rem;
+  font-family: 'Allerta Stencil', sans-serif;
+  color: #555;
+
+  @media all and (max-width: 40rem) {
+    font-size: 3.5rem;
+  }
+`;
+
+export default class IndexPage extends Component {
+  render() {
+    return (
+      <div>
+        <Hero>
+          <Container>
+            <HeroTitle>Hi, I'm Øyvind</HeroTitle>
+          </Container>
+        </Hero>
+      </div>
+    );
+  }
+}
