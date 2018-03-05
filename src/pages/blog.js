@@ -40,8 +40,6 @@ const Meta = styled.em`
 const BlogPage = ({ data }) => {
   const { allMarkdownRemark: { edges } } = data;
 
-  console.log(data);
-
   return (
     <ArticlesContainer>
       <Container small>
