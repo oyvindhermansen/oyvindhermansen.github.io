@@ -22,6 +22,7 @@ const StyledLogo = BaseLink.extend`
   transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   border-bottom: 5px solid;
   border-color: #232528;
+  font-family: 'Allerta Stencil', sans-serif;
 
   &:hover {
     border-color: salmon;
