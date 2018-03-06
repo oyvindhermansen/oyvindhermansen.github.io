@@ -11,6 +11,25 @@ const MainMarkdown = Container.extend`
   .gatsby-highlight {
     margin-bottom: 1.45rem;
   }
+
+  a {
+    color: salmon;
+  }
+
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  blockquote {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    border-left: 5px solid salmon;
+    padding-left: 1rem;
+    margin-left: 0;
+  }
 `;
 
 const StyledArticleTitle = styled.h1`
